@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "examplemod",
+  "version": "${version}",
+  "name": "Examplemod",
+  "description": "description",
+  "authors": [
+    "chronosacaria"
+  ],
+  "contact": {
+    "website": "website"
+  },
+  "license": "MIT",
+  "icon": "assets/examplemod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "timefall.examplemod.client.ExamplemodClient"
+    ],
+    "main": [
+      "timefall.examplemod.Examplemod"
+    ]
+  },
+  "mixins": [
+    "examplemod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
